@@ -1,4 +1,12 @@
-#This is created by Chinmaya for testing out the integration of systems for easier terraform deployment.
-#Test out the GIT integration as well.
-#Git - commit from VS is working fine.
-#S3 - backend state storage
+#Exercise to deploy infrastructure to AWS through Terraform.
+#GIT
+#VS Code
+#WSL
+#Architectecture:
+  VPC
+  Subnets - 2
+  Internet Gateway
+  Route Table
+  Security Group
+  S3_Bucket
+  S3_Bucket for state preservation
