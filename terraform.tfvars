@@ -1,7 +1,7 @@
 #root/terraform.tfvars
 
 #region set for root
-aws_region   = "us-west-1"
+aws_region   = "us-west-2"
 
 #variables for module storage
 project_name = "la-terraform"
