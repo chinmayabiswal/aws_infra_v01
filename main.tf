@@ -1,6 +1,8 @@
 #root/main.tf
 provider "aws" {
-  region = "${var.aws_region}"
+  region                      = "${var.aws_region}"
+  skip_requesting_account_id  = true
+  skip_credentials_validation = true
 }
 
 module "storage" {
