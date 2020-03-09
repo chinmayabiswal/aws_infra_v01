@@ -6,14 +6,23 @@ output "BucketName" {
 }
 
 #output fetched from module networking
-output "Public_Subnets" {
-  value = "${module.networking.public_subnets}"
+output "Public Subnets" {
+  value = "${join(", ", module.networking.public_subnets)}"
 }
 
-output "Public_SG" {
+output "Subnet IPs" {
+  value = "${join(", ", module.networking.subnet_ips)}"
+}
+
+output "Public Security Group" {
   value = "${module.networking.public_sg}"
 }
 
-output "Subnet_IPs" {
-  value = "${module.networking.subnet_ips}"
+#outputs by compute
+output "Public Instance IDs" {
+  value = "${module.compute.server_id}"
+}
+
+output "Public Instance IPs" {
+  value = "${module.compute.server_ip}"
 }
